@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f4e4ba;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    background-color: rgb(251, 251, 251);
+    padding: 2em;
+    border-radius: 20px;
+    min-height: 45vh;
+    min-width: 20vw;
+    border: 1px solid black;
+    box-shadow: 10px 10px 10px gray;
+}
+.amount{
+    margin: 10px 0;
+}
+.amount p{
+    font-weight: 700;
+    font-size: 18px;
+}
+input{
+    padding: 5px;
+    margin-top: 5px;
+    width: 100%;
+    border: none;
+    outline: none;
+    /* background: none; */
+}
+select{
+    width: 100%;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    /* font-size: 1rem; */
+}
+.dropdown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin: 10px 0;
+}
+img{
+    width: 2.5vw;
+    /* position: absolute; */
+}
+.select-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.msg{
+    text-align: center;
+    margin: 20px;
+    font-weight: 500;
+    height: 40px;
+}
+button{
+    background-color: #af4d98;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    font-size: 1em;
+    transition: ease-in-out;
+    color: white;
+}
+button:hover{
+    box-shadow: 10px 10px 10px gray;
+    transition: all ease-out;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px){
+    .container{
+        min-width: 40vw;
+        min-height: 30vh;
+    }
+    .amount p{
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .amount input{
+        font-size: 20px;
+        font-weight: 200;
+        border: .5px solid black;
+        border-radius: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 5px;
+    }
+    .from p{
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    .to p{
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    .dropdown i{
+        font-size: 35px;
+    }
+    .select-container img{
+        width: 3rem;
+    }
+    .select-container select{
+        font-size: 18px;
+    }
+    button{
+        padding: 20px;
+        font-size: 20px;
+    }
+    .msg{
+        font-size: 20px;
+        color: red;
+    }
+    h2{
+        font-size: 30px;
+    }
+}
